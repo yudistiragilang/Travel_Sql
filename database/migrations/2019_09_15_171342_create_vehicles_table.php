@@ -18,7 +18,7 @@ class CreateVehiclesTable extends Migration
             $table->increments('id');
             $table->string('kode',10)->unique();
             $table->string('nama',50);
-            $table->integer('harga',13);
+            $table->integer('harga');
             $table->string('foto',100);
             $table->enum('status', ['READY', 'USED']);
             $table->integer('created_by');
